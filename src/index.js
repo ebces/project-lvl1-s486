@@ -1,3 +1,3 @@
-const playerName = name => console.log(`Hello, ${name}!`)
+const playerName = name => console.log(`Hello, ${name}!`);
 
-export default playerName
+export default playerName;
