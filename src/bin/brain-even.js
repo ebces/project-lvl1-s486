@@ -11,10 +11,7 @@ func.playerName(actual);
 for (let i = 0; i < 3; i += 1) {
   const number = func.questions();
   const answer = readlineSync.question('Your answer: ');
-  let correct = 'no';
-  if (number % 2 === 0) {
-    correct = 'yes';
-  }
+  const correct = number % 2 === 0 ? 'yes' : 'no';
 
   if ((number % 2 === 0 && answer === 'yes') || (number % 2 === 1 && answer === 'no')) {
     console.log('Correct!');
