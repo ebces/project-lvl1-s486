@@ -9,6 +9,10 @@ export const questions = () => {
 };
 
 export const expressions = () => {
+  console.log('Welcome to the Brain Games!');
+  console.log('What is the result of the expression?');
+  const actual = readlineSync.question('May I have your name?');
+  playerName(actual);
   let count = 0;
   for (let i = 0; i < 3; i += 1) {
     const firstNumber = Math.floor(Math.random() * 100 + 1);
@@ -32,11 +36,15 @@ export const expressions = () => {
 
     console.log(`Question: ${newExpression}`);
     const answer = readlineSync.question('Your answer: ');
-    console.log(Number(answer) === operationResult ? 'Correct!' : `'${answer}' is wrong answer ;(. Correct answer was '${operation}'`);
+    console.log(Number(answer) === operationResult ? 'Correct!' : `'${answer}' is wrong answer ;(. Correct answer was '${operationResult}'`);
     if (Number(answer) === operationResult) {
       count += 1;
     } else {
-      console.log("Let's try again, Sam!");
+      console.log(`Let's try again, ${actual}!`);
+      break;
     }
+  }
+  if (count === 3) {
+    console.log(`Congratulations, ${actual}!`);
   }
 };
