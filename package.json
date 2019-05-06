@@ -1,7 +1,8 @@
 {
   "name": "gamebces",
   "version": "1.0.12",
-  "description": "",
+  "description": "brain-games",
+  "keywords": ["brain-even", "brain-calc", "brain-gcd", "brain-progression", "brain-prime"],
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",

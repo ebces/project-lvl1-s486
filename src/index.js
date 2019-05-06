@@ -93,11 +93,11 @@ export const progressions = () => {
     const rand = Math.floor(Math.random() * 9);
     let newStep = start;
     let string = '';
-    const arr = [];
+    const array = [];
     const questionArray = [];
 
     for (let i = 0; i < 10; i += 1) {
-      arr.push(newStep);
+      array.push(newStep);
       questionArray.push(newStep);
       if (i === 9) {
         questionArray[rand] = '..';
@@ -110,8 +110,8 @@ export const progressions = () => {
     }
     console.log(`Question: ${string}`);
     const answer = readlineSync.question('Your answer: ');
-    console.log(Number(answer) === arr[rand] ? 'Correct!' : `'${answer}' is wrong answer ;(. Correct answer was '${arr[rand]}'`);
-    if (Number(answer) === arr[rand]) {
+    console.log(Number(answer) === array[rand] ? 'Correct!' : `'${answer}' is wrong answer ;(. Correct answer was '${array[rand]}'`);
+    if (Number(answer) === array[rand]) {
       count += 1;
     } else {
       console.log(`Let's try again, ${actual}!`);
@@ -135,13 +135,13 @@ export const prime = () => {
     const rand = Math.floor(Math.random() * 100 + 2);
     console.log(`Question: ${rand}`);
     const answer = readlineSync.question('Your answer: ');
-    let x = 1;
+    let num = 1;
     let result = 0;
-    while (x <= rand) {
-      if (rand % x === 0) {
+    while (num <= rand) {
+      if (rand % num === 0) {
         result += 1;
       }
-      x += 1;
+      num += 1;
     }
     const trueAnswer = result > 2 ? 'no' : 'yes';
     console.log(trueAnswer === answer ? 'Correct!' : `'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'`);
