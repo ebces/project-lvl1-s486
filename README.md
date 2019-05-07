@@ -1,8 +1,8 @@
 ﻿# project-lvl1-s486
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 [![Build Status](https://travis-ci.com/ebces/project-lvl1-s486.svg?branch=master)](https://travis-ci.com/ebces/project-lvl1-s486)
-<h2>Установка пакета:</h2>
-    `<p>sudo npm install -g gamebces</p>`
+h2 Установка пакета:
+    sudo npm install -g gamebces
 
 <a href="https://asciinema.org/a/CpomlHM4PYD80BnWphmQaxqem" target="_blank"><img src="https://asciinema.org/a/CpomlHM4PYD80BnWphmQaxqem.svg" /></a>
 ***
