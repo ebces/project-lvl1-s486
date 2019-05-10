@@ -30,9 +30,10 @@ const calc = () => {
   return result;
 };
 
-export default calc;
-export const rules = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 
-export const start = () => {
+const star = () => {
   main(rules, calc);
 };
+
+export default star;

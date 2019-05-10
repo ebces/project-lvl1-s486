@@ -13,7 +13,7 @@ const main = (rules, func) => {
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer:');
 
-    if (Number(playerAnswer) === answer) {
+    if (playerAnswer === String(answer)) {
       console.log('Correct!');
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
