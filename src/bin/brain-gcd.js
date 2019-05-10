@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import * as gcd from '..';
+import start from '../games/brain-gcd';
 
-gcd.nod();
+start();

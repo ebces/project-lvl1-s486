@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import * as num from '..';
+import start from '../games/brain-prime';
 
-num.prime();
+start();

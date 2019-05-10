@@ -1,36 +1,22 @@
-import readlineSync from 'readline-sync';
+import main from '..';
 
 const prime = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
-  const actual = readlineSync.question('May I have your name?');
-  playerName(actual);
+  const random = Math.floor(Math.random() * 100 + 2);
   let count = 0;
 
-  for (let i = 0; i < 3; i += 1) {
-    const rand = Math.floor(Math.random() * 100 + 2);
-    console.log(`Question: ${rand}`);
-    const answer = readlineSync.question('Your answer: ');
-    let num = 1;
-    let result = 0;
-    while (num <= rand) {
-      if (rand % num === 0) {
-        result += 1;
-      }
-      num += 1;
-    }
-    const trueAnswer = result > 2 ? 'no' : 'yes';
-    console.log(trueAnswer === answer ? 'Correct!' : `'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'`);
-    if (trueAnswer === answer) {
+  for (let i = 1; i <= random; i += 1) {
+    if (random % i === 0) {
       count += 1;
-    } else {
-      console.log(`Let's try again, ${actual}!`);
-      break;
-    }
-    if (count === 3) {
-      console.log(`Congratulations, ${actual}!`);
     }
   }
+  const answer = count > 2 ? 'no' : 'yes';
+  const result = [answer, random];
+  return result;
 };
 
-export default prime;
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no"';
+const start = () => {
+  main(rules, prime);
+};
+
+export default start;
