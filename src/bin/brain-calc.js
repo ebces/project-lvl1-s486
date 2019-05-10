@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import * as func from '..';
+import { start } from '../games/brain-calc';
 
-
-func.expressions();
+start();
