@@ -1,9 +1,11 @@
 import main from '..';
+import getRandomNumber from '../utils';
 
 const progressions = () => {
-  const start = Math.floor(Math.random() * 20 + 1);
-  const step = Math.floor(Math.random() * 5 + 1);
-  const randomPosition = Math.floor(Math.random() * 9);
+  const start = getRandomNumber(1, 20);
+  const step = getRandomNumber(1, 5);
+  const randomPosition = getRandomNumber(0, 9);
+
   let newStep = start;
   let string = '';
   const array = [];

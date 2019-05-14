@@ -1,5 +1,5 @@
 import main from '..';
-import randomNumber from '../utils';
+import getRandomNumber from '../utils';
 
 const getDivisor = (number1, number2) => {
   let answer = number1;
@@ -10,8 +10,8 @@ const getDivisor = (number1, number2) => {
 };
 
 const nod = () => {
-  const min = randomNumber(1, 50);
-  const max = randomNumber(51, 100);
+  const min = getRandomNumber(1, 50);
+  const max = getRandomNumber(51, 100);
   const answer = getDivisor(min, max);
   const result = [answer, `${min} ${max}`];
   return result;

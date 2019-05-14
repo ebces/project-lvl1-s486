@@ -1,5 +1,5 @@
 import main from '..';
-import randomNumber from '../utils';
+import getRandomNumber from '../utils';
 
 const isPrime = (number) => {
   let count = 0;
@@ -11,7 +11,7 @@ const isPrime = (number) => {
   return count > 2 ? 'no' : 'yes';
 };
 const prime = () => {
-  const question = randomNumber(2, 100);
+  const question = getRandomNumber(2, 100);
   const answer = isPrime(question);
   const result = [answer, question];
   return result;

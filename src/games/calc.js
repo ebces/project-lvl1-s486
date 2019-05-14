@@ -1,5 +1,5 @@
 import main from '..';
-import randomNumber from '../utils';
+import getRandomNumber from '../utils';
 
 const expression = (number1, number2, random) => {
   switch (random) {
@@ -13,19 +13,19 @@ const expression = (number1, number2, random) => {
 };
 
 const calc = () => {
-  const firstNumber = randomNumber(1, 100);
-  const secondNumber = randomNumber(1, 100);
-  const operator = randomNumber(1, 3);
+  const firstNumber = getRandomNumber(1, 100);
+  const secondNumber = getRandomNumber(1, 100);
+  const operator = getRandomNumber(1, 3);
 
-  const question = expression(firstNumber, secondNumber, operator);
-  const result = [question[0], question[1]];
+  const [answer, question] = expression(firstNumber, secondNumber, operator);
+  const result = [answer, question];
   return result;
 };
 
 const description = 'What is the result of the expression?';
 
-const star = () => {
+const start = () => {
   main(description, calc);
 };
 
-export default star;
+export default start;
