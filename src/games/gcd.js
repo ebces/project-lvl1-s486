@@ -18,8 +18,8 @@ const nod = () => {
 };
 
 const description = 'Find the greatest common divisor of given numbers';
-const start = () => {
+
+
+export default () => {
   main(description, nod);
 };
-
-export default start;

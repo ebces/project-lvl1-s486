@@ -5,31 +5,31 @@
 ## Установка пакета:
     sudo npm install -g gamebces
 ### Демонстрация игрового процесса
-<a href="https://asciinema.org/a/CpomlHM4PYD80BnWphmQaxqem" target="_blank"><img src="https://asciinema.org/a/CpomlHM4PYD80BnWphmQaxqem.svg" /></a>
+<a href="https://asciinema.org/a/RFo7PVvQwz5bIyyK24mB8YhB0" target="_blank"><img src="https://asciinema.org/a/RFo7PVvQwz5bIyyK24mB8YhB0.svg" /></a>
 
     brain-even
 
 Демонстрация установки пакета и игрового процесса. Необходимо ответить, четное число или нет.
 ***
-<a href="https://asciinema.org/a/05QM6oBIkso5Vr3EBl5hcsENe" target="_blank"><img src="https://asciinema.org/a/05QM6oBIkso5Vr3EBl5hcsENe.svg" /></a>
+<a href="https://asciinema.org/a/D6tklLOo9jo2JvMMtvMh37Bzr" target="_blank"><img src="https://asciinema.org/a/D6tklLOo9jo2JvMMtvMh37Bzr.svg" /></a>
 
     brain-calc
 
 Необходимо вычислить выражение.
 ***
-<a href="https://asciinema.org/a/NcL29d9kG3d24IktjHvZYN7mP" target="_blank"><img src="https://asciinema.org/a/NcL29d9kG3d24IktjHvZYN7mP.svg" /></a>
+<a href="https://asciinema.org/a/HYAU5dsUg4qg5Dm4Hs2zSLpWJ" target="_blank"><img src="https://asciinema.org/a/HYAU5dsUg4qg5Dm4Hs2zSLpWJ.svg" /></a>
 
     brain-gcd
 
 Необходимо найти наибольший делитель.
 ***
-<a href="https://asciinema.org/a/1z4tmYa5UctPr7pj9VmPrNsL1" target="_blank"><img src="https://asciinema.org/a/1z4tmYa5UctPr7pj9VmPrNsL1.svg" /></a>
+<a href="https://asciinema.org/a/B4iucEv70NmlL8KeQfpDKaSdF" target="_blank"><img src="https://asciinema.org/a/B4iucEv70NmlL8KeQfpDKaSdF.svg" /></a>
 
     brain-progression
 
 Необходимо вычислить пропущенное число.
 ***
-<a href="https://asciinema.org/a/EQGRlRk0TzKOgkjRqbz1IYyno" target="_blank"><img src="https://asciinema.org/a/EQGRlRk0TzKOgkjRqbz1IYyno.svg" /></a>
+<a href="https://asciinema.org/a/9pHGK67uMv6Nl5J3sQQwrL7Mx" target="_blank"><img src="https://asciinema.org/a/9pHGK67uMv6Nl5J3sQQwrL7Mx.svg" /></a>
 
     brain-prime
 

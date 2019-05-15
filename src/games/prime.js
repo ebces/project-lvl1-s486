@@ -18,8 +18,8 @@ const prime = () => {
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-const start = () => {
+
+
+export default () => {
   main(description, prime);
 };
-
-export default start;

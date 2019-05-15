@@ -24,8 +24,7 @@ const calc = () => {
 
 const description = 'What is the result of the expression?';
 
-const start = () => {
+
+export default () => {
   main(description, calc);
 };
-
-export default start;

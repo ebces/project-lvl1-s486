@@ -1,19 +1,23 @@
 import main from '..';
 import getRandomNumber from '../utils';
 
-const isEven = number => (number % 2 === 0 ? 'yes' : 'no');
+const isEven = (number) => {
+  if (number % 2 === 0) {
+    return true;
+  }
+  return false;
+};
 
 const even = () => {
   const question = getRandomNumber(1, 100);
-  const answer = isEven(question);
+  const answer = isEven(question) ? 'yes' : 'no';
   const result = [answer, question];
   return result;
 };
 
-const rules = 'Answer "yes" if number even otherwise answer "no"';
+const description = 'Answer "yes" if number even otherwise answer "no"';
 
-const start = () => {
-  main(rules, even);
+
+export default () => {
+  main(description, even);
 };
-
-export default start;
