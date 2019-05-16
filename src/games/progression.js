@@ -6,25 +6,23 @@ const progressions = () => {
   const step = getRandomNumber(1, 5);
   const hiddenElementPosition = getRandomNumber(0, 9);
   const numberOfArrayElements = 10;
-  const lastElementOfArray = 9;
-  let newStep = start;
-  let string = '';
-  const array = [];
-  const questionArray = [];
+
+  let answer;
+  let question = '';
+  const progression = [];
 
   for (let i = 0; i < numberOfArrayElements; i += 1) {
-    array.push(newStep);
-    questionArray.push(newStep);
-    if (i === lastElementOfArray) {
-      questionArray[hiddenElementPosition] = '..';
+    progression.push(start + step * i);
+    if (i === hiddenElementPosition) {
+      answer = progression[hiddenElementPosition];
+      progression[hiddenElementPosition] = '..';
     }
-    newStep += step;
+    question += `${progression[i]} `;
   }
 
-  for (let i = 0; i < 10; i += 1) {
-    string += `${questionArray[i]} `;
-  }
-  const result = [array[hiddenElementPosition], string];
+  question = question.trim();
+
+  const result = [`${answer}`, question];
   return result;
 };
 const description = 'What number is missing in the progression?';

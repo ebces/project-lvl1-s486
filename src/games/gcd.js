@@ -13,7 +13,7 @@ const nod = () => {
   const min = getRandomNumber(1, 50);
   const max = getRandomNumber(51, 100);
   const answer = getDivisor(min, max);
-  const result = [answer, `${min} ${max}`];
+  const result = [`${answer}`, `${min} ${max}`];
   return result;
 };
 

@@ -18,7 +18,7 @@ const calc = () => {
   const operator = getRandomNumber(1, 3);
 
   const [answer, question] = expression(firstNumber, secondNumber, operator);
-  const result = [answer, question];
+  const result = [`${answer}`, question];
   return result;
 };
 
