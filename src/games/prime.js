@@ -4,7 +4,7 @@ import getRandomNumber from '../utils';
 const isPrime = (number) => {
   let count = 0;
 
-  if (number < 1) {
+  if (number < 2) {
     return false;
   }
 
@@ -28,7 +28,6 @@ const prime = () => {
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-
 
 export default () => {
   main(description, prime);

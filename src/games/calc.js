@@ -18,12 +18,11 @@ const calc = () => {
   const operator = getRandomNumber(1, 3);
 
   const [answer, question] = expression(firstNumber, secondNumber, operator);
-  const result = [`${answer}`, question];
+  const result = [String(answer), question];
   return result;
 };
 
 const description = 'What is the result of the expression?';
-
 
 export default () => {
   main(description, calc);
